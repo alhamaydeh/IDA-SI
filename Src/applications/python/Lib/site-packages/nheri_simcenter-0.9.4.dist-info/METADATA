@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: nheri-simcenter
+Version: 0.9.4
+Summary: NHERI SimCenter Python Dependencies
+Home-page: http://nheri-simcenter.github.io/nheri_simcenter/
+Author: Adam Zsarnóczay
+Author-email: adamzs@stanford.edu
+License: BSD License
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.19.0)
+Requires-Dist: scipy (>=1.5.0)
+Requires-Dist: pandas (>=1.1.0)
+Requires-Dist: openpyxl
+Requires-Dist: tables
+Requires-Dist: openseespy
+Requires-Dist: sklearn
+Requires-Dist: jpype1
+Requires-Dist: tqdm
+Requires-Dist: gpy
+Requires-Dist: pydoe
+Requires-Dist: emukit
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+
+<p align="center">
+	<b>NHERI SimCenter Python Dependencies</b>
+</p>
+
+The `nheri_simcenter` Python package facilitates the installation of the Python dependencies required to run the backend applications used by the NHERI SimCenter. It is available at the Python Package Index (PyPI). With the help of this package, all of those dependencies can be installed using `pip` as follows:
+
+```
+pip install nheri_simcenter
+```
+
+On Mac computers, use the command below to ensure that the dependencies are installed under Python3:
+
+```
+pip3 install nheri_simcenter
+```
+
+## License
+
+`nheri_simcenter` is distributed under the BSD 3-Clause license, see LICENSE.
+
+## Acknowledgement
+
+This material is based upon work supported by the National Science Foundation under Grant No. 1612843. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.
+
+## Contact
+
+Adam Zsarnóczay, NHERI SimCenter, Stanford University, adamzs@stanford.edu
+
+

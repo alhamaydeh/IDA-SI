@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: openseespy
+Version: 3.3.0.1.1
+Summary: A OpenSeesPy package
+Home-page: https://github.com/openseespy/openseespy
+Author: Minjie Zhu
+Author-email: zhum@oregonstate.edu
+License: LICENSE.md
+Platform: Linux
+Platform: Windows
+Platform: Mac
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: openseespymac (>=3.3.0.1) ; platform_system == "Darwin"
+Requires-Dist: openseespylinux (>=3.3.0.1) ; platform_system == "Linux"
+Requires-Dist: openseespywin (>=3.3.0.1) ; platform_system == "Windows"
+
+# OpenSeesPy
+
+Pip Package for OpenSeesPy
+
+## Installation
+
+```bash
+pip install openseespy
+```
+
+## Import
+
+```python
+import openseespy.opensees as ops
+```
+
+## Documentation
+
+**Linux and Windows versions maintained by:**
+
+Minjie Zhu <zhum@oregonstate.edu>
+
+Civil and Construction Engineering
+
+Oregon State University
+
+**Mac version maintained by:**
+
+Dr. Stevan Gavrilovic <gavrilovic@berkeley.edu>
+
+Structural and Earthquake Engineering 
+
+University of California, Berkeley
+
+[OpenSeesPy Documentation](https://openseespydoc.readthedocs.io/en/latest/index.html)
+
+[OpenSeesPy Source Code](github.com/OpenSees/OpenSees)
+
+## Issues
+
+Any issues for installation and running the pip package, please
+report to
+[OpenSeesPy Github Page](https://github.com/zhuminjie/OpenSeesPy).
+
+Any issues and bugs in `OpenSees` should be
+reported on the [OpenSees GitHub Page](https://github.com/OpenSees/OpenSees).
+
+

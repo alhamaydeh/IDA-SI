@@ -1,0 +1,568 @@
+{
+    "Applications": {
+        "DL": {
+            "Application": "pelicun",
+            "ApplicationData": {
+            }
+        },
+        "EDP": {
+            "Application": "StandardEarthquakeEDP",
+            "ApplicationData": {
+            }
+        },
+        "Events": [
+            {
+                "Application": "ExistingPEER_Events",
+                "ApplicationData": {
+                },
+                "EventClassification": "Earthquake"
+            }
+        ],
+        "Modeling": {
+            "Application": "MDOF_BuildingModel",
+            "ApplicationData": {
+            }
+        },
+        "Simulation": {
+            "Application": "OpenSees-Simulation",
+            "ApplicationData": {
+            }
+        },
+        "UQ": {
+            "Application": "Dakota-UQ1",
+            "ApplicationData": {
+            }
+        }
+    },
+    "DamageAndLoss": {
+        "Components": {
+            "NSA-PC-RES1": [
+                {
+                    "direction": "1",
+                    "distribution": "N/A",
+                    "location": "roof",
+                    "median_quantity": "1.0",
+                    "unit": "ea"
+                }
+            ],
+            "NSD-RES1": [
+                {
+                    "direction": "1",
+                    "distribution": "N/A",
+                    "location": "1",
+                    "median_quantity": "1.0",
+                    "unit": "ea"
+                }
+            ],
+            "S-W1-PC-RES1": [
+                {
+                    "direction": "1",
+                    "distribution": "N/A",
+                    "location": "1",
+                    "median_quantity": "1.0",
+                    "unit": "ea"
+                }
+            ]
+        },
+        "DamageModel": {
+            "DesignLevel": "Pre-Code",
+            "StructureType": "W1"
+        },
+        "LossModel": {
+            "DecisionVariables": {
+                "Injuries": true,
+                "ReconstructionCost": true,
+                "ReconstructionTime": true
+            },
+            "Inhabitants": {
+                "OccupancyType": "RES1",
+                "PeakPopulation": "300"
+            },
+            "ReplacementCost": "1000",
+            "ReplacementTime": "2000"
+        },
+        "ResponseModel": {
+            "AdditionalUncertainty": {
+                "GroundMotion": "",
+                "Modeling": ""
+            },
+            "DetectionLimits": {
+                "PFA": "",
+                "PID": ""
+            },
+            "ResponseDescription": {
+                "BasisOfEDP_Distribution": "all results",
+                "CoupledAssessment": false,
+                "EDP_Distribution": "lognormal",
+                "Realizations": "2000"
+            }
+        },
+        "_method": "HAZUS MH EQ"
+    },
+    "EDP": {
+    },
+    "Events": [
+        {
+            "EventClassification": "Earthquake",
+            "Events": [
+                {
+                    "EventClassification": "Earthquake",
+                    "Records": [
+                        {
+                            "dirn": 1,
+                            "factor": 1,
+                            "fileName": "EQ1.AT2",
+                            "filePath": "E:/Maky/Release/Release/Records"
+                        }
+                    ],
+                    "name": "EQ1",
+                    "type": "PeerEvent"
+                },
+                {
+                    "EventClassification": "Earthquake",
+                    "Records": [
+                        {
+                            "dirn": 1,
+                            "factor": 1,
+                            "fileName": "EQ10.AT2",
+                            "filePath": "E:/Maky/Release/Release/Records"
+                        }
+                    ],
+                    "name": "EQ10",
+                    "type": "PeerEvent"
+                },
+                {
+                    "EventClassification": "Earthquake",
+                    "Records": [
+                        {
+                            "dirn": 1,
+                            "factor": 1,
+                            "fileName": "EQ2.AT2",
+                            "filePath": "E:/Maky/Release/Release/Records"
+                        }
+                    ],
+                    "name": "EQ2",
+                    "type": "PeerEvent"
+                },
+                {
+                    "EventClassification": "Earthquake",
+                    "Records": [
+                        {
+                            "dirn": 1,
+                            "factor": 1,
+                            "fileName": "EQ3.AT2",
+                            "filePath": "E:/Maky/Release/Release/Records"
+                        }
+                    ],
+                    "name": "EQ3",
+                    "type": "PeerEvent"
+                },
+                {
+                    "EventClassification": "Earthquake",
+                    "Records": [
+                        {
+                            "dirn": 1,
+                            "factor": 1,
+                            "fileName": "EQ4.AT2",
+                            "filePath": "E:/Maky/Release/Release/Records"
+                        }
+                    ],
+                    "name": "EQ4",
+                    "type": "PeerEvent"
+                },
+                {
+                    "EventClassification": "Earthquake",
+                    "Records": [
+                        {
+                            "dirn": 1,
+                            "factor": 1,
+                            "fileName": "EQ5.AT2",
+                            "filePath": "E:/Maky/Release/Release/Records"
+                        }
+                    ],
+                    "name": "EQ5",
+                    "type": "PeerEvent"
+                },
+                {
+                    "EventClassification": "Earthquake",
+                    "Records": [
+                        {
+                            "dirn": 1,
+                            "factor": 1,
+                            "fileName": "EQ6.AT2",
+                            "filePath": "E:/Maky/Release/Release/Records"
+                        }
+                    ],
+                    "name": "EQ6",
+                    "type": "PeerEvent"
+                },
+                {
+                    "EventClassification": "Earthquake",
+                    "Records": [
+                        {
+                            "dirn": 1,
+                            "factor": 1,
+                            "fileName": "EQ7.AT2",
+                            "filePath": "E:/Maky/Release/Release/Records"
+                        }
+                    ],
+                    "name": "EQ7",
+                    "type": "PeerEvent"
+                },
+                {
+                    "EventClassification": "Earthquake",
+                    "Records": [
+                        {
+                            "dirn": 1,
+                            "factor": 1,
+                            "fileName": "EQ8.AT2",
+                            "filePath": "E:/Maky/Release/Release/Records"
+                        }
+                    ],
+                    "name": "EQ8",
+                    "type": "PeerEvent"
+                },
+                {
+                    "EventClassification": "Earthquake",
+                    "Records": [
+                        {
+                            "dirn": 1,
+                            "factor": 1,
+                            "fileName": "EQ9.AT2",
+                            "filePath": "E:/Maky/Release/Release/Records"
+                        }
+                    ],
+                    "name": "EQ9",
+                    "type": "PeerEvent"
+                }
+            ],
+            "type": "ExistingPEER_Events"
+        }
+    ],
+    "GeneralInformation": {
+        "NumberOfStories": 5,
+        "PlanArea": 129600,
+        "depth": 360,
+        "height": 17.5,
+        "location": {
+            "latitude": 37.426,
+            "longitude": -122.171
+        },
+        "name": "",
+        "planArea": 129600,
+        "stories": 5,
+        "units": {
+            "force": "kN",
+            "length": "m",
+            "temperature": "C",
+            "time": "sec"
+        },
+        "width": 360
+    },
+    "SesmicIsolation": {
+        "Friction Model List": [
+        ],
+        "Isolator List": [
+            {
+                "ZeroLength Isolator": {
+                    "Damper Length": 1,
+                    "Dampers Material": "VFD",
+                    "Fy_x": "RV.Ky",
+                    "Fy_y": "RV.Ky",
+                    "Height": 1.5,
+                    "Isolator Name": "NRB-VFD",
+                    "K_theta": 10000000000,
+                    "K_x": "RV.Kbase",
+                    "K_y": "RV.Kbase",
+                    "RVs": [
+                        "SIMass",
+                        "Kbase",
+                        "Ky"
+                    ],
+                    "Use Dampers": true,
+                    "b_x": 0.1,
+                    "b_y": 0.1,
+                    "m": "RV.SIMass"
+                }
+            }
+        ],
+        "Material List": [
+            {
+                "Viscous Material": {
+                    "Alpha": "RV.Alpha",
+                    "C": "RV.C",
+                    "Material Name": "VFD",
+                    "RVs": [
+                        "C",
+                        "Alpha"
+                    ]
+                }
+            }
+        ]
+    },
+    "Simulation": {
+        "Application": "OpenSees-Simulation",
+        "algorithm": "Newton",
+        "analysis": "Transient -numSubLevels 2 -numSubSteps 10",
+        "convergenceTest": "NormUnbalance 1.0e-2 10",
+        "dampingModel": "Rayleigh Damping",
+        "dampingRatio": 0.05,
+        "dampingRatioModal": 0.02,
+        "firstMode": 1,
+        "integration": "Newmark 0.5 0.25",
+        "modalRayleighTangentRatio": 0,
+        "numModesModal": 1,
+        "rayleighTangent": "Initial",
+        "secondMode": 0,
+        "solver": "Umfpack"
+    },
+    "StructuralInformation": {
+        "BaseIsolation": {
+            "FrictionModels": [
+            ],
+            "FrictionModelsTypes": [
+            ],
+            "IsolatorData": {
+                "ZeroLength Isolator": {
+                    "Damper Length": 1,
+                    "Dampers Material": "VFD",
+                    "Fy_x": "RV.Ky",
+                    "Fy_y": "RV.Ky",
+                    "Height": 1.5,
+                    "Isolator Name": "NRB-VFD",
+                    "K_theta": 10000000000,
+                    "K_x": "RV.Kbase",
+                    "K_y": "RV.Kbase",
+                    "RVs": [
+                        "SIMass",
+                        "Kbase",
+                        "Ky"
+                    ],
+                    "Use Dampers": true,
+                    "b_x": 0.1,
+                    "b_y": 0.1,
+                    "m": "RV.SIMass"
+                }
+            },
+            "IsolatorName": "NRB-VFD",
+            "IsolatorType": "ZeroLength Isolator",
+            "Materials": [
+                {
+                    "Viscous Material": {
+                        "Alpha": "RV.Alpha",
+                        "C": "RV.C",
+                        "Material Name": "VFD",
+                        "RVs": [
+                            "C",
+                            "Alpha"
+                        ]
+                    }
+                }
+            ],
+            "MaterialsTypes": [
+                "Viscous Material"
+            ]
+        },
+        "Bx": 0.1,
+        "By": 0.1,
+        "Fyx": "RV.Ky",
+        "Fyy": "RV.Ky",
+        "Krz": 10000000000,
+        "Kx": 100,
+        "Ky": 100,
+        "ModelData": [
+            {
+                "Fyx": "RV.Ky",
+                "Fyy": "RV.Ky",
+                "Ktheta": 10000000000,
+                "bx": 0.1,
+                "by": 0.1,
+                "height": 3.5,
+                "kx": "RV.K1",
+                "ky": "RV.K1",
+                "weight": "RV.W"
+            },
+            {
+                "Fyx": "RV.Ky",
+                "Fyy": "RV.Ky",
+                "Ktheta": 10000000000,
+                "bx": 0.1,
+                "by": 0.1,
+                "height": 3.5,
+                "kx": "RV.K2",
+                "ky": "RV.K2",
+                "weight": "RV.W"
+            },
+            {
+                "Fyx": "RV.Ky",
+                "Fyy": "RV.Ky",
+                "Ktheta": 10000000000,
+                "bx": 0.1,
+                "by": 0.1,
+                "height": 3.5,
+                "kx": "RV.K3",
+                "ky": "RV.K3",
+                "weight": "RV.W"
+            },
+            {
+                "Fyx": "RV.Ky",
+                "Fyy": "RV.Ky",
+                "Ktheta": 10000000000,
+                "bx": 0.1,
+                "by": 0.1,
+                "height": 3.5,
+                "kx": "RV.K4",
+                "ky": "RV.K4",
+                "weight": "RV.W"
+            },
+            {
+                "Fyx": "RV.Ky",
+                "Fyy": "RV.Ky",
+                "Ktheta": 10000000000,
+                "bx": 0.1,
+                "by": 0.1,
+                "height": 3.5,
+                "kx": "RV.K5",
+                "ky": "RV.K5",
+                "weight": "RV.W"
+            }
+        ],
+        "height": 144,
+        "massX": 0,
+        "massY": 0,
+        "numStories": 5,
+        "randomVar": [
+        ],
+        "responseX": 0,
+        "responseY": 0,
+        "type": "MDOF_BuildingModel",
+        "weight": "RV.W"
+    },
+    "UQ_Method": {
+        "parallelExecution": true,
+        "samplingMethodData": {
+            "keepSamples": true,
+            "method": "LHS",
+            "samples": 20,
+            "seed": 343
+        },
+        "uqEngine": "Dakota",
+        "uqType": "Forward Propagation"
+    },
+    "localAppDir": "E:/Maky/Release/Release",
+    "randomVariables": [
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 33732,
+            "name": "K1",
+            "refCount": 1,
+            "stdDev": 1686.6,
+            "value": "RV.K1",
+            "variableClass": "Uncertain"
+        },
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 29093,
+            "name": "K2",
+            "refCount": 1,
+            "stdDev": 1454.65,
+            "value": "RV.K2",
+            "variableClass": "Uncertain"
+        },
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 28621,
+            "name": "K3",
+            "refCount": 1,
+            "stdDev": 1431.05,
+            "value": "RV.K3",
+            "variableClass": "Uncertain"
+        },
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 24954,
+            "name": "K4",
+            "refCount": 1,
+            "stdDev": 1247.7,
+            "value": "RV.K4",
+            "variableClass": "Uncertain"
+        },
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 19059,
+            "name": "K5",
+            "refCount": 1,
+            "stdDev": 47.65,
+            "value": "RV.K5",
+            "variableClass": "Uncertain"
+        },
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 57849.7,
+            "name": "W",
+            "refCount": 1,
+            "stdDev": 5784.97,
+            "value": "RV.W",
+            "variableClass": "Uncertain"
+        },
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 35595.6,
+            "name": "Ky",
+            "refCount": 6,
+            "stdDev": 100,
+            "value": "RV.Ky",
+            "variableClass": "Uncertain"
+        },
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 350,
+            "name": "C",
+            "refCount": 5,
+            "stdDev": 52.5,
+            "value": "RV.C",
+            "variableClass": "Uncertain"
+        },
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 0.7,
+            "name": "Alpha",
+            "refCount": 5,
+            "stdDev": 0.105,
+            "value": "RV.Alpha",
+            "variableClass": "Uncertain"
+        },
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 232,
+            "name": "Kbase",
+            "refCount": 5,
+            "stdDev": 23.2,
+            "value": "RV.Kbase",
+            "variableClass": "Uncertain"
+        },
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 6800,
+            "name": "SIMass",
+            "refCount": 4,
+            "stdDev": 680,
+            "value": "RV.SIMass",
+            "variableClass": "Uncertain"
+        }
+    ],
+    "remoteAppDir": "E:/Maky/Release/Release",
+    "runType": "runningLocal",
+    "workingDir": "C:/Users/moham/OneDrive/Documents/PBE/LocalWorkDir"
+}

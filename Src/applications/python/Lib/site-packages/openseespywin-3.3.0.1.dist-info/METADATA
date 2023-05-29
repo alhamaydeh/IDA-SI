@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: openseespywin
+Version: 3.3.0.1
+Summary: A OpenSeesPy Windows package
+Home-page: https://github.com/openseespy/openseespy
+Author: Minjie Zhu
+Author-email: zhum@oregonstate.edu
+License: LICENSE.md
+Platform: Windows
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# OpenSeesPy Windows
+
+Pip Package for OpenSeesPy Windows
+
+## Installation
+
+```bash
+pip install openseespywin
+```
+
+## Import
+
+```python
+import openseespywin as ops
+```
+
+## Documentation
+
+[OpenSeesPy Documentation](https://openseespydoc.readthedocs.io/en/latest/index.html)
+
+[OpenSeesPy Source Code](github.com/OpenSees/OpenSees)
+
+## Issues
+
+Any issues for installation and running the pip package, please
+report to
+[OpenSeesPy Github Page](https://github.com/zhuminjie/OpenSeesPy).
+
+Any issues and bugs in `OpenSees` should be
+reported on the [OpenSees GitHub Page](https://github.com/OpenSees/OpenSees).
+
+
