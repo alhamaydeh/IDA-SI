@@ -1,7 +1,8 @@
 # IDA–SI
 IDA–SI: Incremental Dynamic Analysis and Seismic Isolation Tool for NHERI-SimCenter Performance-Based Engineering Application.
 
-![image](https://github.com/alhamaydeh/IDA-SI/blob/main/IDA-SI_UI.tiff)
+![image](https://github.com/alhamaydeh/IDA-SI/blob/main/IDA-SI_UI.png)
+
 
 # IDA–SI
 The IDA-SI software program has been created with the purpose of integrating seismic isolation components into an incremental dynamic analysis user interface as supplementary features. Seismic isolation is an effective method for managing response and reducing harm in various essential structures. The technique involves separating the superstructure and foundations and absorbing ground motion energy at the isolation level. Seismic isolation bearings are classified into two types based on their energy-dissipation mechanisms: friction-based and elastomeric-based, with various finite-element models available for each bearing element type. All of these models have been incorporated into the software's supplementary components.
